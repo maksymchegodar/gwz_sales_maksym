@@ -1,0 +1,10 @@
+SELECT
+  date_date,
+  SUM(turnover) AS turnover,
+  SUM(purchase_cost) AS purchase_cost
+FROM
+  `orbital-airfoil-462409-a5.course17.gwz_sales_17`
+GROUP BY
+  date_date
+ORDER BY
+  date_date;
